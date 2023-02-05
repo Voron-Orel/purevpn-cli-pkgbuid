@@ -14,7 +14,8 @@ depends=('wget'
          'openvpn'
          'wireguard-tools'
          'net-tools'
-         'openresolv')
+         'openresolv'
+         'inetutils')
 install=purevpn-cli.install
 source_x86_64=("${pkgname}.gz::https://purevpn-dialer-assets.s3.amazonaws.com/cross-platform/linux-cli/${pkgver}/${pkgname}.gz"
                "pured-linux-x64.gz::https://purevpn-dialer-assets.s3.amazonaws.com/cross-platform/linux-daemon/1.3.0/pured-linux-x64.gz"
