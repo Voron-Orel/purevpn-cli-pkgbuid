@@ -1,5 +1,5 @@
-# purevpn-cli-pkgbuid
-Building the PureVPN-cli package and fix for installation on ArchLinux
+# Purevpn-cli pkgbuid ArchLinux x86_64
+Building the PureVPN-cli package and installation on ArchLinux
 
 # Usage:
 ```
