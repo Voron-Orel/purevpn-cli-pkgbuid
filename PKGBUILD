@@ -8,6 +8,7 @@ arch=(x86_64)
 pkgdesc='Package to install PureVPN-cli'
 url=https://www.purevpn.com/
 license=(custom)
+options=(!strip)
 depends=('wget'
          'gzip'
          'openvpn'
@@ -44,9 +45,9 @@ package() {
   
 # Configure binary and license
   echo "Configuring binary and license"
-  install -Dm755 "${srcdir}/${pkgname}" -t "${pkgdir}/etc/pure-linux-cli/"
-  install -Dm755 "${srcdir}/pured-linux-x64" -t "${pkgdir}/etc/pure-linux-cli/"
-  install -Dm755 "${srcdir}/atom-update-resolve-conf" -t "${pkgdir}/usr/bin/"
-  install -Dm755 "${srcdir}/atom-update-resolve-conf-wg" -t "${pkgdir}/usr/bin/"
+  install -Dm755 "${srcdir}/${pkgname}" -t "${pkgdir}/usr/bin/"
+  install -Dm755 "${srcdir}/pured-linux-x64" -t "${pkgdir}/usr/bin/"
+  install -Dm755 "${srcdir}/atom-update-resolve-conf" -t "${pkgdir}/etc/pure-linux-cli/"
+  install -Dm755 "${srcdir}/atom-update-resolve-conf-wg" -t "${pkgdir}/etc/pure-linux-cli/"
   
 } 
