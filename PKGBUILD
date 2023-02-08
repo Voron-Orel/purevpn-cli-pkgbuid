@@ -1,5 +1,5 @@
-# Maintainer: Voron-Orel
-# Contributor: Voron-Orel
+# Maintainer: https://github.com/Voron-Orel
+# Contributor: https://github.com/Voron-Orel
 
 pkgname=purevpn-cli
 pkgver=2.0.0
